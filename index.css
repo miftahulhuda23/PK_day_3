@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+
+h1{
+    color: red;
+}
+
+tbody{
+    counter-reset: section;
+    font-family: 'PT Serif', serif;
+}
+tbody > tr > td:first-child::before{
+    counter-increment: section; 
+    content: counter(section);
+}
+img{
+    filter: blur(1px);
+    width: 200px;
+    opacity: 0,8;
+}
+img:hover{
+    opacity: 1;
+    filter: hue-rotate(90deg);
+}
+.border-nd{
+    border:1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.shadow{
+    box-shadow: 5px 5px 5px 5px black;
+}
